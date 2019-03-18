@@ -1,0 +1,12 @@
+{
+  "apps" : [
+    {
+      "name": "auto-comment-server",
+      "script": "uwsgi",
+      "log_date_format" : "YY/MM/DD HH:mm:ss",
+      "max_memory_restart" : "800M",
+      "cwd": "/home/work/auto_comment/",
+      "args" : "--http 0.0.0.0:5000 --pidfile=/tmp/auto-comment-server.pid --ini uwsgi.ini"
+    }
+  ]
+}
